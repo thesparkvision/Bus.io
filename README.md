@@ -18,6 +18,7 @@ You have to do the necessary changes of this for successful execution of the app
 
 <h3>Installation Steps</h3>
 <p>To run this application on Windows,
+    
 1. First install Python 3.5 or higher
     [Make sure you install Python in C:\Python\   as python has problem with space separated folders
      and make sure python is added to system path  and pip is checked in installation]
@@ -50,10 +51,11 @@ You have to do the necessary changes of this for successful execution of the app
 11. Write garden install mapview
 
 12. You are ready to run this application :)
+
     The demo admin login credentials are
-       Username =0704ADMIN2019
+       Username =0704ADMIN2019 ,
        Password=Admin@123
 
     The demo user credentials are 
-       Username=0704USER2019
+       Username=0704USER2019 ,
        Password=User@123 
