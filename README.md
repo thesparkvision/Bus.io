@@ -5,6 +5,26 @@
 of the bus so that they do not miss their bus. This will also avoid panic the students face and contribute in their mental well being.
 The application also has voice notification support so the student need not look at the smartphone while walking for their stops avoiding the chances of accidents</p>
 
+<h3>Screenshots</h3>
+<img height=500 width=400 src="https://github.com/thesparkvision/Minor1/blob/master/add%20copy.png" alt="Admin Panel">
+<h4>Fig.1 Admin Update Screen</h4><br>
+
+<img height=500 width=400 src="https://github.com/thesparkvision/Minor1/blob/master/admin.png" alt="Main Admin screen">
+<h4>Fig.2 Main Admin Screen</h4><br>
+
+<img height=500 width=400 src="https://github.com/thesparkvision/Minor1/blob/master/forgot.png" alt="Forgot Password Screen">
+<h4>Fig.3 Forgot Password Screen</h4><br>
+
+<img height=500 width=400 src="https://github.com/thesparkvision/Minor1/blob/master/login%20copy.png" alt="Login Screen">
+<h4>Fig.4 Login Screen</h4><br>
+
+<img height=500 width=400 src="https://github.com/thesparkvision/Minor1/blob/master/map.png" alt="Home Screen">
+<h4>Fig.5 Home Screen</h4><br>
+
+<img height=500 width=400 src="https://github.com/thesparkvision/Minor1/blob/master/navbar.png" alt="Navigation Bar">
+<h4>Fig.6 Navigation Bar</h4><br>
+
+
 <h3>Technical Specifications</h3>
 <p>This is a bus tracking application made using Python Kivy Framework and Firebase NoSQL database.
 It also uses Google Maps API,OTP generator , email sending facility. 
