@@ -1,0 +1,106 @@
+<About>:
+	ScrollView:
+		#effect_y:'ScrollEffect'
+		BoxLayout:
+			text_size: self.width, None
+			size_hint_y: None
+			height:self.width+700
+			#height: self.texture_size[1]
+			canvas:
+				Color:
+					rgba: 1,1,1,1
+				Rectangle:
+					size: self.size
+			orientation:'vertical'
+			BoxLayout:
+				orientation:'horizontal'
+				size_hint_y:.1
+				Button:
+					text:'Back'
+					on_press:root.go_home()
+					size_hint_x:.2
+				Label:
+					text:'     '
+					markup:True
+			Label:
+				text:'\n[font=arb][u]About the developer:[/font][/u]\n\n'
+				markup:True 
+				size_hint_y:.3
+				color:0,0,0,1
+				font_size:25
+			Label:
+				#size_hint_y:.3
+				text:'\nThis is a bus tracking app developed in minor project by MIT Ujjain Students\n\n'
+				font_size:20
+				padding_x:3
+				halign:'center'
+				color:0,0,0,1
+				size_hint_y: .4
+				text_size: self.width, None
+				height: self.texture_size[1]
+			Label:
+				text:'\n\n\n\n\n\n\n\n\n\n'
+				size_hint_y: .3
+			BoxLayout:
+				orientation:'horizontal'
+				Image:
+					source:'images/anshika.jpg'
+					size_hint_x:.99
+					height:50
+					size_hint_y:.99
+					allow_stretch:True  
+				BoxLayout:
+					orientation:'vertical'
+					pos_hint_x:.99
+					Label:
+						text:'[font=crimson]                         Meet[/font] [font=brush]Anshika[/font]                    '
+						color:0,0,0,1
+						size_hint_y:.4
+						size_hint_x:.5
+						markup:True
+						font_size:36 
+					Label:
+						text:'                    Anshika lives in\n                    Dewas currently.She\n                    is a passionate\n                    python developer and\n                    an aspiring future\n                    data scientist.She is a\n                   very active person in\n                    college.She is also\n                   part of MUN'
+						color:0,0,0,1
+						font_size:12
+						size_hint_y:.8
+						size_hint_x:.5
+						pos_hint_x:.3
+			Label:
+				text:'\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
+			BoxLayout:
+				orientation:'horizontal'
+				Image:
+					source:'images/aman.jpg'
+					size_hint_x:.99
+					size_hint_y:1
+					allow_stretch:True  
+				BoxLayout:
+					orientation:'vertical'
+					Label:
+						text:'[font=crimson]                           Meet[/font] [font=brush]Aman[/font]                    '
+						color:0,0,0,1
+						size_hint_y:.4
+						size_hint_x:.7
+						markup:True
+						font_size:36
+					Label:
+						text:'\n                      Aman lives in\n                      Dewas currently.She\n                      is a passionate\n                      python developer and\n                      an aspiring future\n                      data scientist.She is a\n                     very active person in\n                      college.She is also\n                     part of Hollywood'
+						color:0,0,0,1
+						size_hint_y:.9
+						size_hint_x:.4
+						font_size:12
+			Label:
+				text:'\n\n\n\n\n\n'
+			Label:
+				text:'[font=crimson]Mail us at:[/font] \n'
+				font_size:25
+				color:0,0,0,1
+				markup:True
+				size_hint_y:.2
+			Label:
+				text:'[ref="bhatnagaransika02@gmail.com"]bhatnagaranshika02@gmail.com[/ref]\n [ref="aman15.pandya@gmail.com"]aman15.pandya@gmail.com[/ref]\n\n'
+				markup:True
+				size_hint_y:.2
+				font_size:15
+				color:0,0,0,1

@@ -1,0 +1,16 @@
+<Welcome>:
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'images/front.jpg'
+    FloatLayout:
+        Button:
+            id: flash
+            text: "[color=2b5fa7][font=Baskerville][size=54]WELCOME[/size][/font][/color]\n[color=3ca72b][font=BodoniFLF-Bold][size=36]        TO[/size][/font][/color]\n[color=Black][font=Broadway][size=72]   B[/size][/font][font=BodoniFLF-Bold][size=24]US[/size][/font][font=Broadway][size=36].io[/size][/font][/color][font=ComicSansMS3][color=3ca72b][size=24]\n\n[b]Tap here to continue...[/b][/size][/color][/font]"
+            on_press: root.do_change()
+            markup: True
+            size_hint: 0.6,0.4
+            pos_hint: {'center_x':.5, 'center_y':.5}
+            font_size: 30
+            background_color:0,0,0,0

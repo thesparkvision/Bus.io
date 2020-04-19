@@ -1,0 +1,46 @@
+<ManageAdmin>:
+    BoxLayout:
+        orientation:'vertical'
+        spacing:30
+        padding:[10,20,20,10]
+        BoxLayout:
+            orientation:'horizontal'
+            size_hint_y:.2
+            Button:
+                text:'Back'
+                on_press:root.go_login()
+                size_hint:1,1
+            
+		Label:
+            text:'[font=Broadway]This section is for Admins only[/font]'
+            font_size:24
+            size_hint:1,.3
+            markup:True
+			color:0,1,1,1
+        TextInput:
+            id:a
+            hint_text:'Enter Username'
+            text:''
+            size_hint:1,.2
+            font_size:18
+		TextInput:
+            id:c
+            hint_text:'Enter Email'
+            text:''
+            size_hint:1,.2
+            font_size:18
+		TextInput:
+            id:d
+            hint_text:'Enter Password'
+            text:''
+            size_hint:1,.2
+            font_size:18
+        
+        Button:
+            text:'Add/Update '
+            size_hint:1,.2
+            on_press:root.Add(a.text,c.text,d.text)
+        Button:
+            text:'Delete '
+            size_hint:1,.2
+            on_press:root.Del(a.text,c.text,d.text)

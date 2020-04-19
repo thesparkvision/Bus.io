@@ -1,0 +1,30 @@
+<VerifyOTP>:
+    BoxLayout:
+        orientation:'vertical'
+        spacing:50
+        padding:[10,50,10,50]
+		BoxLayout:
+            orientation:'horizontal'
+            size_hint_y:.1
+            Button:
+                text:'Back'
+                on_press:root.go_forgotpassword()
+                size_hint_x:.3
+            Label:
+                text:'     '
+                markup:True
+        Label:
+            text:'[color=3ca72b][font=Broadway]Forgot Password[/font][/color]'
+            font_size:44
+            size_hint:1,.4
+            markup:True
+        TextInput:
+            id:otp
+            hint_text:'OTP'  
+            size_hint:1,.1
+            font_size:18
+            text:''	 
+        Button:
+            text:'Verify'
+            size_hint:1,.1
+            on_press:root.verify(otp.text)

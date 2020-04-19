@@ -1,0 +1,153 @@
+<HomeND>:
+    NavigationDrawer:
+        anim_type:'slide_above_simple'
+        id:main_win
+        BoxLayout:
+            orientation:'vertical'
+            canvas.before:
+                Color:
+                    rgba:(1,1,1,1)
+                Rectangle:
+                    pos:self.pos
+                    size:self.size
+            BoxLayout:
+                orientation:'vertical'
+                BoxLayout:
+                    id:av
+                    size_hint_y:.45
+                    canvas.after:
+                        Color:
+                            rgba:(1,1,1,1)
+                        Ellipse:
+                            size:av.size[0],av.size[0]
+                            pos:self.pos
+                            source:'images/yellowbus.jpg'
+                Label:
+                    text:'@theexplorer'
+                    color:(0,0,0,1)
+                    size_hint_y:.15
+            BoxLayout:
+                orientation:'vertical'
+                Button:
+                    text:'Profile'
+                    size_hint_y:.2
+                    font_size: 24
+                Button:
+                    text:'Buses'
+                    size_hint_y:.2
+                    font_size: 24
+                Button:
+                    text:'Drivers'
+                    size_hint_y:.2
+                    font_size: 24
+                Button:
+                    text:'Settings'
+                    size_hint_y:.2
+                    font_size: 24
+                Button:
+                    text:'About'
+                    size_hint_y:.2
+                    font_size: 24
+                    on_press:root.go_about()
+                Button:
+                    text: "Logout"
+                    font_size: 24
+                    on_press: root.logout()
+                    size_hint: 1,0.1
+                    size_hint_y:None
+                    height:35 
+        
+        BoxLayout:
+            orientation:'vertical'
+            canvas.before:
+                Color:
+                    rgba:(0,0,0,1)
+                Rectangle:
+                    pos:self.pos
+                    size:self.size
+            BoxLayout:
+                orientation:'horizontal'
+                color: rgba(1,1,1,1)
+                size_hint:(1,.1)
+                Button:
+                    text:'='
+                    size_hint:(None,None)
+                    size:(75,75)
+                    on_release:main_win.toggle_state()
+                    pos_hint: {'center_x':.1, 'center_y':.5}
+                    #background_color:0,0,0,0
+                    #Image:
+                        #source: 'images/nav.png'
+                        #allow_stretch: True
+                        #pos_hint: {'center_x':.1, 'center_y':.1}
+                        #size:(45,45)
+                #ToggleButton:
+                    #text:'Dewas'
+                    #group:'City'
+                    #color:(0,0,0,1) 
+                    #size_hint:(None,None)
+                    #size:(100,45)
+                    #pos_hint: {'center_x':0, 'center_y':.1}
+                #ToggleButton:
+                    #text:'Ujjain'
+                    #group:'City'
+                    #color:(0,0,0,1) 
+                    #size_hint:(None,None)
+                    #size:(100,45)
+                    #pos_hint: {'center_x':0, 'center_y':.1}
+                CheckBox:
+                    group:'City'
+                    color:(1,1,1,1) 
+                    size_hint:(None,None)
+                    size:(40,45)
+                    pos_hint: {'center_x':0, 'center_y':.5}
+                    on_press:root.on_checkbox_active("Ujjain")
+                Label:
+                    text:'Ujjain'
+                    color:(1,1,1,1) 
+                    size_hint:(None,None)
+                    size:(80,45)
+                    pos_hint: {'center_x':0, 'center_y':.5}
+                CheckBox:
+                    group:'City'
+                    color:(0,1,1,1) 
+                    background_color:(1,1,1,1)
+                    size_hint:(None,None)
+                    size:(40,45)
+                    pos_hint: {'center_x':0, 'center_y':.5}
+                    on_press:root.on_checkbox_active("Dewas")
+                Label:
+                    text:'Dewas'
+                    color:(1,1,1,1) 
+                    size_hint:(None,None)
+                    size:(80,45)
+                    pos_hint: {'center_x':0, 'center_y':.5}
+            
+            MapView:
+                id:mv
+                zoom:11
+                lat:50.6394
+                lon:3.057
+                double_tap_zoom:True
+			BoxLayout:
+				orientation:'horizontal'
+				size_hint:1,.2
+				#size:(20,20)
+				padding:[0,0,0,0]
+				Button:
+					text:'[font=BodoniFLF-Bold]Click here to know Shortest Distance[/font]\n\n'
+					font_size: 14
+					color:(1,1,1,1)
+					#size_hint:(1,1)
+					background_color:0,0,0,0
+					text_size: self.size
+					size_hint_y: None
+					text_size: self.width, None
+					height: self.texture_size[1]
+					markup:True
+				TextInput:
+					id:dis
+					text:''
+					font_size: 14
+					color:(1,1,1,1)
+					size_hint:(1,1)	
