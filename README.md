@@ -1,4 +1,4 @@
-# Minor1
+# Bus.io
 
 <h3>About the Application</h3>
 <p>This is an android bus tracking application which is made so that the college going students can know the live whereabouts 
